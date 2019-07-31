@@ -7,7 +7,7 @@ using System.Text;
 
 namespace TCC.Models
 {
-    public class Brands : Entity, IHasCreationTime
+    public class Brand : Entity, IHasCreationTime
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -20,7 +20,7 @@ namespace TCC.Models
         public DateTime CreationTime { get; set; }
         public string TimeZone { get; set; }
 
-        public Brands()
+        public Brand()
         {
             CreationTime = Clock.Now;
         }

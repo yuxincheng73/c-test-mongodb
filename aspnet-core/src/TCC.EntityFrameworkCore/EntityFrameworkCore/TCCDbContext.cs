@@ -10,7 +10,7 @@ namespace TCC.EntityFrameworkCore
     public class TCCDbContext : AbpZeroDbContext<Tenant, Role, User, TCCDbContext>
     {
         /* Define a DbSet for each entity of the application */
-        public DbSet<Brands> Brands { get; set; }
+        public DbSet<Brand> Brands { get; set; }
         
         public TCCDbContext(DbContextOptions<TCCDbContext> options)
             : base(options)
