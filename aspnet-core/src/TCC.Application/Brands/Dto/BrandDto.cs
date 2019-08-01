@@ -7,7 +7,7 @@ using TCC.Models;
 
 namespace TCC.Brands.Dto
 {
-    [AutoMapFrom(typeof(Brand))]
+    [AutoMap(typeof(Brand))]
     public class BrandDto : EntityDto
     {
         public string Name { get; set; }

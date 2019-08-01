@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TCC.EntityFrameworkCore;
 
 namespace TCC.Migrations
 {
     [DbContext(typeof(TCCDbContext))]
-    partial class TCCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190801085904_Initial-2")]
+    partial class Initial2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

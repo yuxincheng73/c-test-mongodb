@@ -11,10 +11,11 @@ namespace TCC.Brands
 {
     public interface IBrandsService : IApplicationService
     {
-        Task<BrandDto> GetBrands();
+        Task<ListResultDto<BrandDto>> GetBrands();
         Task<BrandDto> GetBrand(int id);
-        Task<BrandDto> CreateBrand(CreateBrandDto input);
+        Task<BrandDto> GetBrandbyName(string name);
+        Task<int> CreateBrand(CreateBrandDto input);
         Task<BrandDto> UpdateBrand(BrandDto input);
-        Task<BrandDto> DeleteBrand(EntityDto input);
+        Task<int> DeleteBrand(EntityDto input);
     }
 }

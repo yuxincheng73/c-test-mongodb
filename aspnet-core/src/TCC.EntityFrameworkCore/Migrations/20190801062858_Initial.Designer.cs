@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TCC.EntityFrameworkCore;
 
 namespace TCC.Migrations
 {
     [DbContext(typeof(TCCDbContext))]
-    partial class TCCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190801062858_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1038,34 +1040,25 @@ namespace TCC.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CoverImage")
-                        .HasColumnName("cover_image");
+                    b.Property<string>("CoverImage");
 
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnName("launch_date");
+                    b.Property<DateTime>("CreationTime");
 
-                    b.Property<string>("Description")
-                        .HasColumnName("description");
+                    b.Property<string>("Description");
 
-                    b.Property<bool>("Discoverable")
-                        .HasColumnName("discoverable");
+                    b.Property<bool>("Discoverable");
 
                     b.Property<string>("Logo");
 
-                    b.Property<string>("Name")
-                        .HasColumnName("name");
+                    b.Property<string>("Name");
 
-                    b.Property<int>("SortingOrder")
-                        .HasColumnName("sorting_order");
+                    b.Property<int>("SortingOrder");
 
-                    b.Property<string>("TimeZone")
-                        .HasColumnName("time_zone");
+                    b.Property<string>("TimeZone");
 
-                    b.Property<string>("Url")
-                        .HasColumnName("url");
+                    b.Property<string>("Url");
 
                     b.HasKey("Id");
 
