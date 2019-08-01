@@ -8,7 +8,7 @@ using System.Text;
 
 namespace TCC.Models
 {
-    public class Brand : Entity, IHasCreationTime
+    public class Brand : Entity, IHasCreationTime, ISoftDelete
     {
         [Column("id")]
         public override int Id { get; set; }
@@ -30,6 +30,7 @@ namespace TCC.Models
         public DateTime CreationTime { get; set; }
         [Column("time_zone")]
         public string TimeZone { get; set; }
+        public bool IsDeleted { get; set; }
 
         public Brand()
         {
