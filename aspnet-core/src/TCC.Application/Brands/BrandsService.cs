@@ -7,6 +7,7 @@ using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using AutoMapper;
+using Newtonsoft.Json.Linq;
 using TCC.Brands.Dto;
 using TCC.Models;
 
@@ -39,10 +40,19 @@ namespace TCC.Brands
             return 1;
         }
 
-        public async Task<BrandDto> GetBrand(int id)
+        public async Task<BrandJSONDto> GetBrand(int id)
         {
             var brand = await _brandRepository.FirstOrDefaultAsync(c => c.Id == id);
-            return ObjectMapper.Map<BrandDto>(brand);
+            //var brandDto = ObjectMapper.Map<BrandDto>(brand).ToString();
+            string json = $"{{\"content\": \"{brand.Name}\"}}" + $"\"language_code\": \"{brand.Name}\"}}";
+            string json2 = $"{{\"content\": \"{brand.Description}\"}}" + $"{{\"language_code\": \"{brand.Description}\"}}";
+            var lol = brand.Name;
+            var loll = brand.Description;
+            brand.Name = json;
+            brand.Description = json2;
+            var brandToReturn = await MapToJson(brand);
+            return brandToReturn;
+            //return ObjectMapper.Map<BrandDto>(brand);
         }
 
         public async Task<BrandDto> GetBrandbyName(string name)
@@ -57,7 +67,7 @@ namespace TCC.Brands
             return new ListResultDto<BrandDto>(ObjectMapper.Map<List<BrandDto>>(brands));
         }
 
-        public async Task<BrandDto> UpdateBrand(BrandDto input)
+        public async Task<BrandJSONDto> UpdateBrand(dynamic input)
         {
             if (input == null)
             {
@@ -65,7 +75,24 @@ namespace TCC.Brands
             }
             var brand = ObjectMapper.Map<Brand>(input);
             var updatedBrand = await _brandRepository.UpdateAsync(brand);
-            return ObjectMapper.Map<BrandDto>(updatedBrand);
+            var brandToReturn = await MapToJson(updatedBrand);
+            return brandToReturn;
+            //return ObjectMapper.Map<BrandDto>(updatedBrand);
+        }
+
+        private async Task<BrandJSONDto> MapToJson(Brand input)
+        {
+            var brandToReturn = new BrandJSONDto
+            {
+                Name = JObject.Parse(input.Name),
+                Description = JObject.Parse(input.Description),
+                Url = input.Url,
+                Logo = input.Logo,
+                CoverImage = input.CoverImage,
+            };
+            System.Diagnostics.Debug.WriteLine(brandToReturn.Name);
+            System.Diagnostics.Debug.WriteLine(brandToReturn.ToString());
+            return brandToReturn;
         }
     }
 }

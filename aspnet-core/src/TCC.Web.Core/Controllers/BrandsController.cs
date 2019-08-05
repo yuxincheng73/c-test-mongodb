@@ -38,7 +38,7 @@ namespace TCC.Controllers
         public async Task<IActionResult> GetBrand(int id)
         {
             var brand = await _brandsService.GetBrand(id);
-            if(brand == null)
+            if (brand == null)
             {
                 return NotFound();
             }
@@ -49,7 +49,7 @@ namespace TCC.Controllers
         [Route("brand")]
         public async Task<IActionResult> GetBrandbyName([FromQuery] string name)
         {
-           var brand = await _brandsService.GetBrandbyName(name);
+            var brand = await _brandsService.GetBrandbyName(name);
             if(brand == null)
             {
                 return NotFound();
@@ -70,13 +70,23 @@ namespace TCC.Controllers
 
         [HttpPut]
         [Route("brand")]
-        public async Task<IActionResult> UpdateBrand(BrandDto input)
+        public async Task<IActionResult> UpdateBrand(dynamic input)
         {
+            var brandToUpdate = new BrandDto
+            {
+                Id = input.Id,
+                Name = input.Name,
+                Description = input.Description,
+                Logo = input.Logo,
+                CoverImage = input.CoverImage,
+                Url = input.Url,
+            };
+
             if(input == null)
             {
                 return NotFound();
             }
-            return Ok(await _brandsService.UpdateBrand(input));
+            return Ok(await _brandsService.UpdateBrand(brandToUpdate));
         }
 
         [HttpDelete]
