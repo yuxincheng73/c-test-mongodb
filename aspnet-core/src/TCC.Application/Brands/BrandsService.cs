@@ -53,8 +53,8 @@ namespace TCC.Brands
 
         public async Task<BrandJSONDto> GetBrandbyName(string name, string language_code)
         {
-            var jsonName = "\"content\": \"" + name + "\", \"language_code\": \"" + language_code + "\"";
-            var brand = await _brandRepository.FirstOrDefaultAsync(c => c.Name.Equals(jsonName));
+            var jsonName = "{\"content\":\"" + name + "\",\"language_code\":\"" + language_code + "\"}";
+            var brand = await _brandRepository.FirstOrDefaultAsync(c => c.Name == jsonName);
             var brandToReturn = await MapToJson(brand);
             return brandToReturn;
             //return ObjectMapper.Map<BrandDto>(brand);
@@ -96,8 +96,6 @@ namespace TCC.Brands
                 Logo = input.Logo,
                 CoverImage = input.CoverImage,
             };
-            System.Diagnostics.Debug.WriteLine(brandToReturn.Name);
-            System.Diagnostics.Debug.WriteLine(brandToReturn.ToString());
             return brandToReturn;
         }
     }
