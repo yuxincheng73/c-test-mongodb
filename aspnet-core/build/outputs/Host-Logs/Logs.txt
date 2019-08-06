@@ -1,0 +1,163 @@
+DEBUG 2019-08-06 07:58:02,263 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-08-06 07:58:02,301 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-08-06 07:58:02,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TCC.Web.Host.Startup.TCCWebHostModule, TCC.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,322 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TCC.TCCWebCoreModule, TCC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,322 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TCC.TCCApplicationModule, TCC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TCC.TCCCoreModule, TCC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,328 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,329 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,329 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TCC.EntityFrameworkCore.TCCEntityFrameworkModule, TCC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,329 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,329 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,333 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-08-06 07:58:02,385 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-08-06 07:58:02,385 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-08-06 07:58:02,385 [1    ] o.Configuration.LanguageManagementConfig - Converted TCC (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-08-06 07:58:02,385 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-08-06 07:58:02,633 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TCC.EntityFrameworkCore.TCCDbContext, TCC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-08-06 07:58:02,971 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-08-06 07:58:03,095 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-08-06 07:58:03,268 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-08-06 07:58:03,340 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TCC
+DEBUG 2019-08-06 07:58:03,489 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-08-06 07:58:03,531 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-08-06 07:58:03,552 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-08-06 07:58:03,590 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2019-08-06 07:58:03,590 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-08-06 07:58:03,597 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.Users.Dto.CreateUserDto
+DEBUG 2019-08-06 07:58:03,598 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.Users.Dto.UserDto
+DEBUG 2019-08-06 07:58:03,598 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-08-06 07:58:03,598 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-08-06 07:58:03,598 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.Roles.Dto.PermissionDto
+DEBUG 2019-08-06 07:58:03,598 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-08-06 07:58:03,598 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.MultiTenancy.Dto.TenantDto
+DEBUG 2019-08-06 07:58:03,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TCC.Brands.Dto.BrandDto
+INFO  2019-08-06 07:58:42,228 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brands  
+INFO  2019-08-06 07:58:42,442 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 07:58:43,136 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrands", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)
+INFO  2019-08-06 07:58:43,330 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) - Validation state: Valid
+ERROR 2019-08-06 07:58:43,748 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - Invalid object name 'Brands'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Brands'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllListAsync(Expression`1 predicate)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at TCC.Brands.BrandsService.GetBrands() in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Application\Brands\BrandsService.cs:line 65
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithFinallyAndGetResult[T](Task`1 actualReturnValue, Action`2 finalAction)
+   at TCC.Controllers.BrandsController.GetBrands() in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:a1b045e6-6f78-4c74-a24c-56d63a20043f
+Error Number:208,State:1,Class:16
+INFO  2019-08-06 07:58:43,757 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) in 618.0753ms
+INFO  2019-08-06 07:58:43,759 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+ERROR 2019-08-06 07:58:43,768 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLOQ8FJ05U15", Request id "0HLOQ8FJ05U15:00000001": An unhandled exception was thrown by the application.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Brands'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.Aggregate_[TSource,TAccumulate,TResult](IAsyncEnumerable`1 source, TAccumulate seed, Func`3 accumulator, Func`2 resultSelector, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllListAsync(Expression`1 predicate)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at TCC.Brands.BrandsService.GetBrands() in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Application\Brands\BrandsService.cs:line 65
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithFinallyAndGetResult[T](Task`1 actualReturnValue, Action`2 finalAction)
+   at TCC.Controllers.BrandsController.GetBrands() in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ClientConnectionId:a1b045e6-6f78-4c74-a24c-56d63a20043f
+Error Number:208,State:1,Class:16
+INFO  2019-08-06 07:58:43,815 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1591.2118ms 500 
+INFO  2019-08-06 08:15:16,499 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brands  
+INFO  2019-08-06 08:15:16,504 [21   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:15:16,509 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrands", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)
+INFO  2019-08-06 08:15:16,511 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) - Validation state: Valid
+INFO  2019-08-06 08:15:16,678 [31   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 159.8905ms.
+INFO  2019-08-06 08:15:16,747 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:15:16,889 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) in 380.343ms
+INFO  2019-08-06 08:15:16,889 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:15:16,893 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 394.1733ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:15:35,941 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:9901/api/service/brand application/json 200
+INFO  2019-08-06 08:15:35,942 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:15:35,964 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "CreateBrand", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)
+INFO  2019-08-06 08:15:36,112 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core) with arguments ({
+  "name": {
+    "content": "fasdasdf",
+    "language_code": "english"
+  },
+  "description": {
+    "content": "bruh",
+    "language_code": "bruh"
+  },
+  "url": "af",
+  "logo": "Afsdsafddf",
+  "coverimage": "asdf"
+}) - Validation state: Valid
+INFO  2019-08-06 08:15:36,309 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 196.7579ms.
+INFO  2019-08-06 08:15:36,349 [32   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:15:36,350 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core) in 386.4633ms
+INFO  2019-08-06 08:15:36,351 [32   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:15:36,351 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 410.1473ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:15:39,649 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brands  
+INFO  2019-08-06 08:15:39,650 [32   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:15:39,652 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrands", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)
+INFO  2019-08-06 08:15:39,655 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) - Validation state: Valid
+INFO  2019-08-06 08:15:39,719 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 63.6013ms.
+INFO  2019-08-06 08:15:39,746 [33   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:15:39,748 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) in 95.8676ms
+INFO  2019-08-06 08:15:39,749 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:15:39,749 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 100.1958ms 200 application/json; charset=utf-8
