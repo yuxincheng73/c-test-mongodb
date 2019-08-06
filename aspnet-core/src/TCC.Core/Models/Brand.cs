@@ -10,8 +10,6 @@ namespace TCC.Models
 {
     public class Brand : Entity, IHasCreationTime, ISoftDelete
     {
-        [Column("id")]
-        public override int Id { get; set; }
         [Column("name")]
         public string Name { get; set; }
         [Column("description")]

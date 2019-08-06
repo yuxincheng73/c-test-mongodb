@@ -22,10 +22,12 @@ namespace TCC.Brands
             _brandRepository = brandRepository;
         }
 
-        public async Task<int> CreateBrand(CreateBrandDto input)
+        public async Task<int> CreateBrand(BrandDto input)
         {
-            
             var brand = ObjectMapper.Map<Brand>(input);
+            brand.Discoverable = false;
+            brand.SortingOrder = brand.Id;
+            brand.TimeZone = DateTime.UtcNow.ToString();
             var brandId = await _brandRepository.InsertAndGetIdAsync(brand);
             return brandId;
         }
@@ -44,30 +46,33 @@ namespace TCC.Brands
         {
             var brand = await _brandRepository.FirstOrDefaultAsync(c => c.Id == id);
             //var brandDto = ObjectMapper.Map<BrandDto>(brand).ToString();
-            string json = $"{{\"content\": \"{brand.Name}\"}}" + $"\"language_code\": \"{brand.Name}\"}}";
-            string json2 = $"{{\"content\": \"{brand.Description}\"}}" + $"{{\"language_code\": \"{brand.Description}\"}}";
-            var lol = brand.Name;
-            var loll = brand.Description;
-            brand.Name = json;
-            brand.Description = json2;
             var brandToReturn = await MapToJson(brand);
             return brandToReturn;
             //return ObjectMapper.Map<BrandDto>(brand);
         }
 
-        public async Task<BrandDto> GetBrandbyName(string name)
+        public async Task<BrandJSONDto> GetBrandbyName(string name, string language_code)
         {
-            var brand = await _brandRepository.FirstOrDefaultAsync(c => c.Name == name);
-            return ObjectMapper.Map<BrandDto>(brand);
+            var jsonName = "\"content\": \"" + name + "\", \"language_code\": \"" + language_code + "\"";
+            var brand = await _brandRepository.FirstOrDefaultAsync(c => c.Name.Equals(jsonName));
+            var brandToReturn = await MapToJson(brand);
+            return brandToReturn;
+            //return ObjectMapper.Map<BrandDto>(brand);
         }
 
-        public async Task<ListResultDto<BrandDto>> GetBrands()
+        public async Task<List<BrandJSONDto>> GetBrands()
         {
             var brands = await _brandRepository.GetAllListAsync(c => c.Name != null);
-            return new ListResultDto<BrandDto>(ObjectMapper.Map<List<BrandDto>>(brands));
+            var brandsToReturn = new List<BrandJSONDto>();
+            foreach(Brand brand in brands)
+            {
+                brandsToReturn.Add(await MapToJson(brand));
+            }
+            return brandsToReturn;
+            //return new ListResultDto<BrandJSONDto>(ObjectMapper.Map<List<BrandJSONDto>>(brands));
         }
 
-        public async Task<BrandJSONDto> UpdateBrand(dynamic input)
+        public async Task<BrandJSONDto> UpdateBrand(BrandDto input)
         {
             if (input == null)
             {
@@ -84,6 +89,7 @@ namespace TCC.Brands
         {
             var brandToReturn = new BrandJSONDto
             {
+                Id = input.Id,
                 Name = JObject.Parse(input.Name),
                 Description = JObject.Parse(input.Description),
                 Url = input.Url,

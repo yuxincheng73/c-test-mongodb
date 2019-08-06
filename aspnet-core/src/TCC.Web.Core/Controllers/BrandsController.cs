@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -47,9 +48,9 @@ namespace TCC.Controllers
 
         [HttpGet]
         [Route("brand")]
-        public async Task<IActionResult> GetBrandbyName([FromQuery] string name)
+        public async Task<IActionResult> GetBrandbyName([FromQuery] string name, [FromQuery] string language_code)
         {
-            var brand = await _brandsService.GetBrandbyName(name);
+            var brand = await _brandsService.GetBrandbyName(name, language_code);
             if(brand == null)
             {
                 return NotFound();
@@ -59,33 +60,40 @@ namespace TCC.Controllers
 
         [HttpPost]
         [Route("brand")]
-        public async Task<IActionResult> CreateBrand(CreateBrandDto input)
+        public async Task<IActionResult> CreateBrand(dynamic input)
         {
             if (input == null)
             {
                 return BadRequest();
             }
-            return Ok(await _brandsService.CreateBrand(input));
+            var brand = new BrandDto
+            {
+                Name = input.name.ToString(Formatting.None),
+                Description = input.description.ToString(Formatting.None),
+                Url = input.url,
+                Logo = input.logo,
+                CoverImage = input.coverimage
+            };
+            return Ok(await _brandsService.CreateBrand(brand));
         }
 
         [HttpPut]
         [Route("brand")]
         public async Task<IActionResult> UpdateBrand(dynamic input)
         {
-            var brandToUpdate = new BrandDto
-            {
-                Id = input.Id,
-                Name = input.Name,
-                Description = input.Description,
-                Logo = input.Logo,
-                CoverImage = input.CoverImage,
-                Url = input.Url,
-            };
-
-            if(input == null)
+            if (input == null)
             {
                 return NotFound();
             }
+            var brandToUpdate = new BrandDto
+            {
+                Id = (int)input.id,
+                Name = input.name.ToString(Formatting.None),
+                Description = input.description.ToString(Formatting.None),
+                Logo = input.logo.ToString(Formatting.None),
+                CoverImage = input.coverimage.ToString(Formatting.None),
+                Url = input.url.ToString(Formatting.None),
+            };
             return Ok(await _brandsService.UpdateBrand(brandToUpdate));
         }
 

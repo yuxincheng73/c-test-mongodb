@@ -1,11 +1,13 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Abp.Application.Services.Dto;
+using Abp.Domain.Entities;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace TCC.Brands.Dto
 {
-    public class BrandJSONDto
+    public class BrandJSONDto : EntityDto
     {
         public JObject Name { get; set; }
         public JObject Description { get; set; }
