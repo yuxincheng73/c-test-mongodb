@@ -161,3 +161,570 @@ INFO  2019-08-06 08:15:39,746 [33   ] .Mvc.Infrastructure.ObjectResultExecutor -
 INFO  2019-08-06 08:15:39,748 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) in 95.8676ms
 INFO  2019-08-06 08:15:39,749 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
 INFO  2019-08-06 08:15:39,749 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 100.1958ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:38:46,375 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brands  
+INFO  2019-08-06 08:38:46,376 [45   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:38:46,381 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrands", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)
+INFO  2019-08-06 08:38:46,385 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) - Validation state: Valid
+INFO  2019-08-06 08:38:46,529 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 143.3639ms.
+INFO  2019-08-06 08:38:46,560 [44   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:38:46,561 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) in 178.3152ms
+INFO  2019-08-06 08:38:46,561 [44   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:38:46,562 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 186.5494ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:39:11,433 [46   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:9901/api/service/brand application/json 206
+INFO  2019-08-06 08:39:11,434 [46   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:39:11,442 [46   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "CreateBrand", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)
+INFO  2019-08-06 08:39:11,447 [46   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core) with arguments ({
+  "name": {
+    "content": "HIIIIIIIIIIIII",
+    "language_code": "english"
+  },
+  "description": {
+    "content": "bruh",
+    "language_code": "bruh"
+  },
+  "url": "af",
+  "logo": "Afsdsafddf",
+  "coverimage": "asdf"
+}) - Validation state: Valid
+INFO  2019-08-06 08:39:11,487 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 38.7741ms.
+INFO  2019-08-06 08:39:11,521 [43   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:39:11,521 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core) in 77.8978ms
+INFO  2019-08-06 08:39:11,522 [43   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:39:11,522 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.8889ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:45:58,311 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:9901/api/service/brand application/json 207
+INFO  2019-08-06 08:45:58,313 [43   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:45:58,318 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "CreateBrand", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)
+INFO  2019-08-06 08:45:58,321 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core) with arguments ({
+  "name": {
+    "content": "LMAOOOOOOOOOOOO",
+    "language_code": "english"
+  },
+  "description": {
+    "content": "bruh",
+    "language_code": "bruh"
+  },
+  "url": "af",
+  "logo": "Afsdsafddf",
+  "coverimage": "asdf"
+}) - Validation state: Valid
+INFO  2019-08-06 08:45:58,442 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 120.5611ms.
+INFO  2019-08-06 08:45:58,476 [37   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:45:58,477 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core) in 158.4186ms
+INFO  2019-08-06 08:45:58,478 [37   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.CreateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:45:58,478 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 166.9551ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:46:01,154 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brands  
+INFO  2019-08-06 08:46:01,155 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:46:01,160 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrands", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)
+INFO  2019-08-06 08:46:01,163 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) - Validation state: Valid
+INFO  2019-08-06 08:46:01,247 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 83.5371ms.
+INFO  2019-08-06 08:46:01,275 [37   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:46:01,276 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) in 116.0171ms
+INFO  2019-08-06 08:46:01,277 [37   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:46:01,278 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 123.7483ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:46:12,320 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 PUT http://localhost:9901/api/service/brand application/json 250
+INFO  2019-08-06 08:46:12,322 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:46:12,328 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "UpdateBrand", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)
+INFO  2019-08-06 08:46:12,339 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) with arguments ({
+  "id": 4,
+  "name": {
+    "content": "HEHEHHEHEHEE",
+    "language_code": "afdsf"
+  },
+  "description": {
+    "content": "Best hiking gear!",
+    "language_code": "FAsdfa"
+  },
+  "url": "Columbia.com",
+  "logo": "logo_columbia",
+  "coverimage": "cover_columbia"
+}) - Validation state: Valid
+INFO  2019-08-06 08:46:12,412 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 71.1713ms.
+INFO  2019-08-06 08:46:12,473 [37   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:46:12,475 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) in 145.9386ms
+INFO  2019-08-06 08:46:12,475 [37   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+INFO  2019-08-06 08:46:12,477 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 156.9815ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:46:15,360 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brands  
+INFO  2019-08-06 08:46:15,364 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:46:15,369 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrands", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)
+INFO  2019-08-06 08:46:15,372 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) - Validation state: Valid
+INFO  2019-08-06 08:46:15,417 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40.4299ms.
+INFO  2019-08-06 08:46:15,449 [43   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:46:15,450 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core) in 79.4555ms
+INFO  2019-08-06 08:46:15,450 [43   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrands (TCC.Web.Core)'
+INFO  2019-08-06 08:46:15,451 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 90.9657ms 200 application/json; charset=utf-8
+INFO  2019-08-06 08:46:21,065 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brand?name=fasdasdf&language_code=english  
+INFO  2019-08-06 08:46:21,070 [43   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core)'
+INFO  2019-08-06 08:46:21,085 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrandbyName", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core)
+INFO  2019-08-06 08:46:21,097 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core) with arguments (fasdasdf, english) - Validation state: Valid
+INFO  2019-08-06 08:46:21,168 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 69.8824ms.
+INFO  2019-08-06 08:46:21,206 [35   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-08-06 08:46:21,207 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core) in 120.8288ms
+INFO  2019-08-06 08:46:21,209 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core)'
+INFO  2019-08-06 08:46:21,210 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 144.7702ms 200 application/json; charset=utf-8
+WARN  2019-08-06 10:04:06,712 [33   ] Abp.BackgroundJobs.BackgroundJobManager  - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - Success)
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionWithNoPreconditions(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetQueryable()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors)
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+ClientConnectionId:1b96278a-d341-403f-a016-38cb7316b4a0
+System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - Success)
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionWithNoPreconditions(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetQueryable()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors)
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+ClientConnectionId:1b96278a-d341-403f-a016-38cb7316b4a0
+WARN  2019-08-07 10:14:03,526 [11   ] Abp.BackgroundJobs.BackgroundJobManager  - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - Success)
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionWithNoPreconditions(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetQueryable()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors)
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+ClientConnectionId:db0903ab-03dc-48b0-a1a2-5555a31a8cf8
+System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - Success)
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionWithNoPreconditions(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetQueryable()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors)
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+ClientConnectionId:db0903ab-03dc-48b0-a1a2-5555a31a8cf8
+INFO  2019-08-08 02:47:09,888 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 PUT http://localhost:9901/api/service/brand application/json 275
+INFO  2019-08-08 02:47:09,916 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+INFO  2019-08-08 02:47:09,920 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "UpdateBrand", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)
+INFO  2019-08-08 02:47:09,923 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) with arguments ({
+  "id": "5d4a575689f7caee1045ee82",
+  "name": {
+    "content": "HEHEHHEHEHEE",
+    "language_code": "afdsf"
+  },
+  "description": {
+    "content": "Best hiking gear!",
+    "language_code": "FAsdfa"
+  },
+  "url": "Columbia.com",
+  "logo": "logo_columbia",
+  "coverimage": "cover_columbia"
+}) - Validation state: Valid
+ERROR 2019-08-08 02:47:09,958 [52   ] Mvc.ExceptionHandling.AbpExceptionFilter - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(ReadOnlySpan`1 s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Utilities.ConvertUtils.TryConvertInternal(Object initialValue, CultureInfo culture, Type targetType, Object& value)
+   at Newtonsoft.Json.Utilities.ConvertUtils.Convert(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Linq.JValue.JValueDynamicProxy.TryConvert(JValue instance, ConvertBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at TCC.Controllers.BrandsController.UpdateBrand(Object input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-08-08 02:47:09,960 [52   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) in 39.4062ms
+INFO  2019-08-08 02:47:09,960 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+ERROR 2019-08-08 02:47:09,962 [52   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLOQ8FJ05U1D", Request id "0HLOQ8FJ05U1D:00000001": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(ReadOnlySpan`1 s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Utilities.ConvertUtils.TryConvertInternal(Object initialValue, CultureInfo culture, Type targetType, Object& value)
+   at Newtonsoft.Json.Utilities.ConvertUtils.Convert(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Linq.JValue.JValueDynamicProxy.TryConvert(JValue instance, ConvertBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at TCC.Controllers.BrandsController.UpdateBrand(Object input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-08-08 02:47:09,963 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 75.8803ms 500 
+INFO  2019-08-08 02:47:15,233 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 PUT http://localhost:9901/api/service/brand application/json 275
+INFO  2019-08-08 02:47:15,235 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+INFO  2019-08-08 02:47:15,242 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "UpdateBrand", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)
+INFO  2019-08-08 02:47:15,247 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) with arguments ({
+  "id": "5d4a575689f7caee1045ee82",
+  "name": {
+    "content": "HEHEHHEHEHEE",
+    "language_code": "afdsf"
+  },
+  "description": {
+    "content": "Best hiking gear!",
+    "language_code": "FAsdfa"
+  },
+  "url": "Columbia.com",
+  "logo": "logo_columbia",
+  "coverimage": "cover_columbia"
+}) - Validation state: Valid
+ERROR 2019-08-08 02:47:15,272 [52   ] Mvc.ExceptionHandling.AbpExceptionFilter - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(ReadOnlySpan`1 s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Utilities.ConvertUtils.TryConvertInternal(Object initialValue, CultureInfo culture, Type targetType, Object& value)
+   at Newtonsoft.Json.Utilities.ConvertUtils.Convert(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Linq.JValue.JValueDynamicProxy.TryConvert(JValue instance, ConvertBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at TCC.Controllers.BrandsController.UpdateBrand(Object input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-08-08 02:47:15,273 [52   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) in 28.962ms
+INFO  2019-08-08 02:47:15,295 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+ERROR 2019-08-08 02:47:15,297 [52   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLOQ8FJ05U1D", Request id "0HLOQ8FJ05U1D:00000002": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(ReadOnlySpan`1 s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Utilities.ConvertUtils.TryConvertInternal(Object initialValue, CultureInfo culture, Type targetType, Object& value)
+   at Newtonsoft.Json.Utilities.ConvertUtils.Convert(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Linq.JValue.JValueDynamicProxy.TryConvert(JValue instance, ConvertBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at TCC.Controllers.BrandsController.UpdateBrand(Object input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-08-08 02:47:15,299 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 65.8896ms 500 
+INFO  2019-08-08 02:47:32,165 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 PUT http://localhost:9901/api/service/brand application/json 275
+INFO  2019-08-08 02:47:32,166 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+INFO  2019-08-08 02:47:32,170 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "UpdateBrand", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)
+INFO  2019-08-08 02:47:32,173 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) with arguments ({
+  "id": "5d4a575689f7caee1045ee82",
+  "name": {
+    "content": "HEHEHHEHEHEE",
+    "language_code": "afdsf"
+  },
+  "description": {
+    "content": "Best hiking gear!",
+    "language_code": "FAsdfa"
+  },
+  "url": "Columbia.com",
+  "logo": "logo_columbia",
+  "coverimage": "cover_columbia"
+}) - Validation state: Valid
+ERROR 2019-08-08 02:47:32,200 [33   ] Mvc.ExceptionHandling.AbpExceptionFilter - Input string was not in a correct format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(ReadOnlySpan`1 s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Utilities.ConvertUtils.TryConvertInternal(Object initialValue, CultureInfo culture, Type targetType, Object& value)
+   at Newtonsoft.Json.Utilities.ConvertUtils.Convert(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Linq.JValue.JValueDynamicProxy.TryConvert(JValue instance, ConvertBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at TCC.Controllers.BrandsController.UpdateBrand(Object input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-08-08 02:47:32,201 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core) in 30.8049ms
+INFO  2019-08-08 02:47:32,202 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.UpdateBrand (TCC.Web.Core)'
+ERROR 2019-08-08 02:47:32,203 [33   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLOQ8FJ05U1D", Request id "0HLOQ8FJ05U1D:00000003": An unhandled exception was thrown by the application.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(ReadOnlySpan`1 str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(ReadOnlySpan`1 s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Utilities.ConvertUtils.TryConvertInternal(Object initialValue, CultureInfo culture, Type targetType, Object& value)
+   at Newtonsoft.Json.Utilities.ConvertUtils.Convert(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Linq.JValue.JValueDynamicProxy.TryConvert(JValue instance, ConvertBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at TCC.Controllers.BrandsController.UpdateBrand(Object input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-08-08 02:47:32,205 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.1318ms 500 
+INFO  2019-08-08 02:51:15,644 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:9901/api/service/brand?name=FAMMMMM&language_code=english  
+INFO  2019-08-08 02:51:15,645 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core)'
+INFO  2019-08-08 02:51:15,651 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetBrandbyName", controller = "Brands", area = ""}. Executing action TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core)
+INFO  2019-08-08 02:51:15,656 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core) with arguments (FAMMMMM, english) - Validation state: Valid
+ERROR 2019-08-08 02:51:15,825 [28   ] Mvc.ExceptionHandling.AbpExceptionFilter - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TCC.Brands.BrandsService.MapToJson(Brand input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Application\Brands\BrandsService.cs:line 90
+   at TCC.Brands.BrandsService.GetBrandbyName(String name, String language_code) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Application\Brands\BrandsService.cs:line 58
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithFinallyAndGetResult[T](Task`1 actualReturnValue, Action`2 finalAction)
+   at TCC.Controllers.BrandsController.GetBrandbyName(String name, String language_code) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-08-08 02:51:15,828 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core) in 174.4392ms
+INFO  2019-08-08 02:51:15,829 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'TCC.Controllers.BrandsController.GetBrandbyName (TCC.Web.Core)'
+ERROR 2019-08-08 02:51:15,832 [28   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLOQ8FJ05U1F", Request id "0HLOQ8FJ05U1F:00000001": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TCC.Brands.BrandsService.MapToJson(Brand input) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Application\Brands\BrandsService.cs:line 90
+   at TCC.Brands.BrandsService.GetBrandbyName(String name, String language_code) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Application\Brands\BrandsService.cs:line 58
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithFinallyAndGetResult[T](Task`1 actualReturnValue, Action`2 finalAction)
+   at TCC.Controllers.BrandsController.GetBrandbyName(String name, String language_code) in C:\Users\chengyuxin\Documents\c--test\aspnet-core\src\TCC.Web.Core\Controllers\BrandsController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-08-08 02:51:15,835 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 191.7595ms 500 

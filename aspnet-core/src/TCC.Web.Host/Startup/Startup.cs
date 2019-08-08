@@ -17,6 +17,9 @@ using TCC.Identity;
 
 using Abp.AspNetCore.SignalR.Hubs;
 using Microsoft.AspNetCore.Mvc;
+using TCC.Models;
+using Microsoft.Extensions.Options;
+using TCC.Brands;
 
 namespace TCC.Web.Host.Startup
 {
@@ -33,6 +36,13 @@ namespace TCC.Web.Host.Startup
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            services.Configure<BrandsDatabaseSettings>(_appConfiguration.GetSection(nameof(BrandsDatabaseSettings)));
+
+            services.AddSingleton<IBrandsDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<BrandsDatabaseSettings>>().Value);
+
+            services.AddSingleton<BrandsService>();
+
             // MVC
             services.AddMvc(
                 options => options.Filters.Add(new CorsAuthorizationFilterFactory(_defaultCorsPolicyName))

@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,8 @@ using TCC.Brands.Dto;
 
 namespace TCC.Controllers
 {
-    [Produces("application/json")]
     [ApiController]
-    [Route("api/service")]
+    [Route("api")]
     public class BrandsController : TCCControllerBase
     {
         private readonly IBrandsService _brandsService;
@@ -36,7 +36,7 @@ namespace TCC.Controllers
 
         [HttpGet]
         [Route("brand/{id}")]
-        public async Task<IActionResult> GetBrand(int id)
+        public async Task<IActionResult> GetBrand(string id)
         {
             var brand = await _brandsService.GetBrand(id);
             if (brand == null)
@@ -87,25 +87,25 @@ namespace TCC.Controllers
             }
             var brandToUpdate = new BrandDto
             {
-                Id = (int)input.id,
+                Id = input.id,
                 Name = input.name.ToString(Formatting.None),
                 Description = input.description.ToString(Formatting.None),
-                Logo = input.logo.ToString(Formatting.None),
-                CoverImage = input.coverimage.ToString(Formatting.None),
-                Url = input.url.ToString(Formatting.None),
+                Logo = input.logo,
+                CoverImage = input.coverimage,
+                Url = input.url
             };
             return Ok(await _brandsService.UpdateBrand(brandToUpdate));
         }
 
         [HttpDelete]
         [Route("brand")]
-        public async Task<IActionResult> DeleteBrand(EntityDto input)
+        public async Task<IActionResult> DeleteBrand(DeleteBrandDto id)
         {
-            if(input == null)
+            if (id == null)
             {
                 return NotFound();
             }
-            await _brandsService.DeleteBrand(input);
+            await _brandsService.DeleteBrand(id.Id);
             return Ok();
         }
     }
